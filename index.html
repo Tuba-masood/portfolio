@@ -303,15 +303,26 @@
       skillsContainer.appendChild(block);
     });
 
-    const projects = [
-     {
+   const projects = [
+  {
     title: "PIMA Diabetes Prediction",
     desc: "End-to-end ML pipeline on 768 patient records: cleaned disguised missing values, stratified train/test split, and a Logistic Regression model (AUC 0.84, validated with 5-fold cross-validation). Beat the majority-class baseline. Python, pandas, scikit-learn.",
-    link: "https://github.com/Tuba-masood/DS-Portfolio"
+    link: "https://github.com/Tuba-masood/DS-Portfolio",
+    images: []
   },
-      { title: "Coming soon", desc: "Next project in progress — check back shortly.", link: null },
-      { title: "Coming soon", desc: "More data science work on the way.", link: null }
-    ];
+  {
+    title: "Same Data, Three Audiences",
+    desc: "Visualized CDC survey data (118K rows, 2011–2025) showing low-income adults are 2.4× more likely to get no free-time exercise (41% vs. 17.1%). Built three versions for three audiences: a trend chart for public health officials, a Spanish-language chart for a community health fair, and U.S. maps for students. Caught and corrected a map color scale that hid the gap. IBM Cognos Analytics.",
+    link: null,
+    images: [
+      { src: "C:\Users\Tuba Masood\Desktop\Chart1_final.jpg", alt: "Line chart of physical inactivity by income, 2011–2025" },
+      { src: "C:\Users\Tuba Masood\Desktop\Chart2_HealthFair.png", alt: "Spanish bar chart comparing lowest and highest income groups" },
+      { src: "C:\Users\Tuba Masood\Desktop\Chart3_students_Under15k.png", alt: "U.S. map of inactivity for adults earning under $15,000" },
+      { src: "C:\Users\Tuba Masood\Desktop\Chart3_Students_75k_plus.png", alt: "U.S. map of inactivity for adults earning $75,000 or more" }
+    ]
+  },
+  { title: "Coming soon", desc: "More data science work on the way.", link: null, images: [] }
+];
     const grid = document.getElementById('projectsGrid');
     projects.forEach(p => {
       const card = document.createElement('div');
